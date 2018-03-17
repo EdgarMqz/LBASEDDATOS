@@ -1,0 +1,11 @@
+GO
+ insert into Ubicacion  (Pais, Estado, Numero)
+	VALUES ('Mexico', 'Zacatecas', '15'); 
+ insert into Ubicacion  (Pais, Estado, Numero)
+	VALUES ('Mexico', 'Chihuahua', '11'); 
+insert into Ubicacion  (Pais, Estado, Numero)
+	VALUES ('Mexico', 'Zacatecas', '15'); 
+
+
+	Select * from Ubicacion
+		GO
