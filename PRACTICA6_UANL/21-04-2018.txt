@@ -1,0 +1,73 @@
+-------tablas temporales
+-------pi
+
+
+-----------JOIN
+select * from N-tabla as m(simplifica)
+inner join(se una internamente) N-otraTabla as e(simplifica) on m.idEstadis = e.id
+EJEMPLO:
+select * from Doctor as D
+INNER join Paciente as P on D.idDoctor = P.idPaciente
+
+------------WHERE
+select * from N-tabla as m(simplifica)
+inner join(se una internamente) N-otraTabla as e(simplifica) on m.idEstadis = e.id
+where m.idEstais = e.id
+EJEMPLO:
+select * from Doctor as D
+INNER join Paciente as P on D.idDoctor = P.idPaciente
+WHERE D.idDoctor = P.idPaciente
+
+-------------OR
+select * from N-tabla as m(simplifica)
+full join Estados e on e.id = m.idEstado
+where m.idEstais = e.id
+
+-------------OUTER
+
+-------------TABLA PRODUCTO CROSS
+SELECT * 
+FROM MUNICIPIO AS M
+CROSS JOIN ESTADOS E
+EJEMPLO:
+SELECT * 
+FROM Doctor AS D
+CROSS JOIN Paciente AS P
+
+----------------VISTAS----------------------------------------------------------------------------
+create view DomicilioCompletos as
+select d.idCalle, d.NuumeroInterno
+from Direcciones
+left join colonia c on c.id = id.colonia
+left join municpio m on m.id = c.municpio
+
+EJEMPLO:
+create view DomicilioCompletos as d
+select d.idCalle, d.NuumeroInterno
+from Direcciones
+left join colonia c on c.id = id.colonia
+left join municpio m on m.id = c.municpio
+
+EJEMPLO.
+SELECT [Nombre Doctor], D.Medula, D.Area, D.[Fecha de Nacimiento], D.[Numero de Paciente], D.ExpedientePaciente, D.idDoctor
+FROM Doctor D left join Paciente P on D.Medula = P.[Numero de paciente]
+
+-----------subconsulta 2
+whit variable as (
+select d.idCalle, d.NuumeroInterno
+from Direcciones
+left join colonia c on c.id = id.colonia
+left join municpio m on m.id = c.municpio)
+select *
+from variable 
+where variable.Municipio = 'Escobedo'
+
+-----------------------------------------------
+		SELECT
+INNER-------FULL------INNER(LEFT-RIGHT)
+-----------------------------------------------
+PRACTICA6_UANL
+5 VISTAS
+(JOIN, FUNCIONES AGREGADAS(SUMAS, CONTEO))
+
+
