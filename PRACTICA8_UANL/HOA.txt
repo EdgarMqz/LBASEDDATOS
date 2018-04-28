@@ -1,0 +1,49 @@
+P8 Y PIA
+5 MAYO
+
+--------------------PROGRAMACION EN BASE DE DATOS
+INSERT INTO COMMENTS 
+VALUES (
+'FULANITO', 'CORREO@HOTMAIL.COM', 'A) PRDE COMMENTS GO' )
+ 
+
+--------------------FUNCIONES
+} END
+*EXEX SP q,q,q
+FN(@ P1, @ P2)
+INT, VARCHAR, TABLE
+
+RETURN ¨TIPO DE DATO DE REGRESO¨
+
+SELECT FN(@P1, @P2)
+FROMF N2(P3)   --SUBCONSULTA
+
+
+---------------------TRIGGER
+CREATE TRIGGER TABLA
+ON ¨TABLA DE TI¿RIGGER QUE SE VA CREAR¨
+INSERT OF UPDATE ---DELETE/*INATEAD*/
+AS
+BEGIN
+	SELECT *
+	FROM INSERTED
+	SELECT *
+	FROM DELETED
+END
+SELECT * FROM ¨TABLA DE TRIGGER QUE SE VA CREAR
+--UPDATE¨
+where id = 'id'
+----------------FUNCION											CREATE FUNCTION SUMA (@V1 FLOAT)
+REURNS FLOAT
+AS
+BEGIN
+REURN @V1
+END
+SEKECT SUMA(.2)												
+
+
+
+CREATE PROCEDURE REPORTEALEAOTRIO(@VALOR1)
+SELECT * FROM DepartamentoLugar
+WHERE numDepartamento > @VALOR1
+END REPORTEALEATORIO 10																																										5 PROCEDIMIENTO ALMACENADOS 1 FUNCION 1 TRIGGER																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
